@@ -43,6 +43,10 @@ app.use(session({
   secret: 'keyboard cat',
   name: 'connect.sid',
   cookie: { path: '/' }
+  app.use(session({
+  secret: 'keyboard cat1',
+  name: 'connect1.sid',
+  cookie: { path: '/' }
 }))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
